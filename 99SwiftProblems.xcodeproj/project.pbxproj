@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FD97F545219DE0C600874F68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F544219DE0C600874F68 /* AppDelegate.swift */; };
-		FD97F547219DE0C600874F68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F546219DE0C600874F68 /* ViewController.swift */; };
 		FD97F54A219DE0C600874F68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD97F548219DE0C600874F68 /* Main.storyboard */; };
 		FD97F54C219DE0C800874F68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD97F54B219DE0C800874F68 /* Assets.xcassets */; };
 		FD97F54F219DE0C800874F68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD97F54D219DE0C800874F68 /* LaunchScreen.storyboard */; };
 		FD97F55A219DE0C800874F68 /* _9SwiftProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F559219DE0C800874F68 /* _9SwiftProblemsTests.swift */; };
 		FD97F565219DE0C800874F68 /* _9SwiftProblemsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F564219DE0C800874F68 /* _9SwiftProblemsUITests.swift */; };
+		FD97F576219DE18800874F68 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F575219DE18800874F68 /* List.swift */; };
+		FD97F578219DE68500874F68 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F577219DE68500874F68 /* XCTestCaseExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		FD97F541219DE0C600874F68 /* 99SwiftProblems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 99SwiftProblems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD97F544219DE0C600874F68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD97F546219DE0C600874F68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD97F549219DE0C600874F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD97F54B219DE0C800874F68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD97F54E219DE0C800874F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		FD97F560219DE0C800874F68 /* 99SwiftProblemsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 99SwiftProblemsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD97F564219DE0C800874F68 /* _9SwiftProblemsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _9SwiftProblemsUITests.swift; sourceTree = "<group>"; };
 		FD97F566219DE0C800874F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD97F575219DE18800874F68 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		FD97F577219DE68500874F68 /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				FD97F544219DE0C600874F68 /* AppDelegate.swift */,
-				FD97F546219DE0C600874F68 /* ViewController.swift */,
-				FD97F548219DE0C600874F68 /* Main.storyboard */,
-				FD97F54B219DE0C800874F68 /* Assets.xcassets */,
-				FD97F54D219DE0C800874F68 /* LaunchScreen.storyboard */,
-				FD97F550219DE0C800874F68 /* Info.plist */,
+				FD97F574219DE17400874F68 /* Models */,
+				FD97F573219DE15B00874F68 /* Storyboards */,
+				FD97F572219DE15400874F68 /* Resources */,
 			);
 			path = 99SwiftProblems;
 			sourceTree = "<group>";
@@ -111,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				FD97F559219DE0C800874F68 /* _9SwiftProblemsTests.swift */,
+				FD97F577219DE68500874F68 /* XCTestCaseExtension.swift */,
 				FD97F55B219DE0C800874F68 /* Info.plist */,
 			);
 			path = 99SwiftProblemsTests;
@@ -123,6 +124,32 @@
 				FD97F566219DE0C800874F68 /* Info.plist */,
 			);
 			path = 99SwiftProblemsUITests;
+			sourceTree = "<group>";
+		};
+		FD97F572219DE15400874F68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD97F54B219DE0C800874F68 /* Assets.xcassets */,
+				FD97F54D219DE0C800874F68 /* LaunchScreen.storyboard */,
+				FD97F550219DE0C800874F68 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD97F573219DE15B00874F68 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FD97F548219DE0C600874F68 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FD97F574219DE17400874F68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD97F575219DE18800874F68 /* List.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD97F547219DE0C600874F68 /* ViewController.swift in Sources */,
 				FD97F545219DE0C600874F68 /* AppDelegate.swift in Sources */,
+				FD97F576219DE18800874F68 /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD97F578219DE68500874F68 /* XCTestCaseExtension.swift in Sources */,
 				FD97F55A219DE0C800874F68 /* _9SwiftProblemsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +462,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B24U63J96U;
-				INFOPLIST_FILE = 99SwiftProblems/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/99SwiftProblems/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B24U63J96U;
-				INFOPLIST_FILE = 99SwiftProblems/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/99SwiftProblems/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,25 +10,19 @@ import XCTest
 @testable import _9SwiftProblems
 
 class _9SwiftProblemsTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    func testListInitializer() {
+        let list = List(1, 1, 3, 4, 7, 9)
+        XCTAssertEqualList([1, 1, 3, 4, 7, 9], list)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testLast() {
+        let list = List(1, 1, 3, 4, 7, 9)
+        XCTAssertEqual(9, list.last)
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testPenultimate() {
+        let list = List(1, 1, 3, 4, 7, 9)
+        XCTAssertEqual(7, list.penultimate)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
