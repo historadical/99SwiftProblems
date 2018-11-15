@@ -12,17 +12,29 @@ import XCTest
 class _9SwiftProblemsTests: XCTestCase {
     
     func testListInitializer() {
-        let list = List(1, 1, 3, 4, 7, 9)
-        XCTAssertEqualList([1, 1, 3, 4, 7, 9], list)
+        let listOfOne = List(1)
+        let listOfTwo = List(2, 4)
+        let listOfFive = List(3, 3, 5, 7, 9)
+        XCTAssertEqualList([1], listOfOne)
+        XCTAssertEqualList([2, 4], listOfTwo)
+        XCTAssertEqualList([3, 3, 5, 7, 9], listOfFive)
     }
     
     func testLast() {
-        let list = List(1, 1, 3, 4, 7, 9)
-        XCTAssertEqual(9, list.last)
+        let listOfOne = List(1)
+        let listOfTwo = List(2, 4)
+        let listOfFive = List(3, 3, 5, 7, 9)
+        XCTAssertEqual(1, listOfOne.last)
+        XCTAssertEqual(4, listOfTwo.last)
+        XCTAssertEqual(9, listOfFive.last)
     }
     
     func testPenultimate() {
-        let list = List(1, 1, 3, 4, 7, 9)
-        XCTAssertEqual(7, list.penultimate)
+        let listOfOne = List(1)
+        let listOfTwo = List(2, 4)
+        let listOfFive = List(3, 3, 5, 7, 9)
+        XCTAssertNil(listOfOne.penultimate)
+        XCTAssertEqual(2, listOfTwo.penultimate)
+        XCTAssertEqual(7, listOfFive.penultimate)
     }
 }
