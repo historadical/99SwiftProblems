@@ -12,6 +12,7 @@ import XCTest
 class P04: XCTestCase {
     
     func testLength() {
-        XCTAssertEqual(6, List(1, 1, 2, 3, 5, 8).length)
+        XCTAssertEqual(1, List(1).length)
+        XCTAssertEqual(5, List(1, 2, 3, 4, 5).length)
     }
 }

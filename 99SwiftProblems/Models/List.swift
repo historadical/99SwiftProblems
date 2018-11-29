@@ -58,3 +58,25 @@ extension List {
         return currentValue
     }
 }
+
+// P06
+extension List where T: Equatable {
+
+    func isPalindrome() -> Bool {
+        guard self.length > 1 else { return true }
+        var originalList = self
+        var reversedList = self.reverse()
+        var i = 0
+        repeat {
+            if originalList.value != reversedList.value {
+                return false
+            }
+            guard let originalNextItem = originalList.nextItem,
+                let reversedNextItem = reversedList.nextItem else { return false }
+            originalList = originalNextItem
+            reversedList = reversedNextItem
+            i += 1
+        } while i < self.length / 2
+        return true
+    }
+}
