@@ -50,10 +50,10 @@ extension List {
         var currentValue = List(value)
         while originalList.nextItem != nil,
             let nextItem = originalList.nextItem {
-            originalList = nextItem
-            let newList = List(originalList.value)
-            newList.nextItem = currentValue
-            currentValue = newList
+                originalList = nextItem
+                let newList = List(originalList.value)
+                newList.nextItem = currentValue
+                currentValue = newList
         }
         return currentValue
     }
@@ -61,22 +61,20 @@ extension List {
 
 // P06
 extension List where T: Equatable {
-
+    
     func isPalindrome() -> Bool {
         guard self.length > 1 else { return true }
         var originalList = self
         var reversedList = self.reverse()
-        var i = 0
+        var index = 0
         repeat {
-            if originalList.value != reversedList.value {
-                return false
-            }
             guard let originalNextItem = originalList.nextItem,
-                let reversedNextItem = reversedList.nextItem else { return false }
+                let reversedNextItem = reversedList.nextItem,
+                originalList.value == reversedList.value else { return false }
             originalList = originalNextItem
             reversedList = reversedNextItem
-            i += 1
-        } while i < self.length / 2
+            index += 1
+        } while index < self.length / 2
         return true
     }
 }
