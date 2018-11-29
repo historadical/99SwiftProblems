@@ -1,5 +1,5 @@
 //
-//  _9SwiftProblemsTests.swift
+//  P01.swift
 //  99SwiftProblemsTests
 //
 //  Created by Nic Laughter on 11/15/18.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import _9SwiftProblems
 
-class _9SwiftProblemsTests: XCTestCase {
+class P01: XCTestCase {
     
     func testListInitializer() {
         let listOfOne = List(1)
@@ -27,14 +27,5 @@ class _9SwiftProblemsTests: XCTestCase {
         XCTAssertEqual(1, listOfOne.last)
         XCTAssertEqual(4, listOfTwo.last)
         XCTAssertEqual(9, listOfFive.last)
-    }
-    
-    func testPenultimate() {
-        let listOfOne = List(1)
-        let listOfTwo = List(2, 4)
-        let listOfFive = List(3, 3, 5, 7, 9)
-        XCTAssertNil(listOfOne.penultimate)
-        XCTAssertEqual(2, listOfTwo.penultimate)
-        XCTAssertEqual(7, listOfFive.penultimate)
     }
 }

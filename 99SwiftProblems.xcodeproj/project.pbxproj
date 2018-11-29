@@ -11,10 +11,12 @@
 		FD97F54A219DE0C600874F68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD97F548219DE0C600874F68 /* Main.storyboard */; };
 		FD97F54C219DE0C800874F68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD97F54B219DE0C800874F68 /* Assets.xcassets */; };
 		FD97F54F219DE0C800874F68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD97F54D219DE0C800874F68 /* LaunchScreen.storyboard */; };
-		FD97F55A219DE0C800874F68 /* _9SwiftProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F559219DE0C800874F68 /* _9SwiftProblemsTests.swift */; };
+		FD97F55A219DE0C800874F68 /* P01.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F559219DE0C800874F68 /* P01.swift */; };
 		FD97F565219DE0C800874F68 /* _9SwiftProblemsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F564219DE0C800874F68 /* _9SwiftProblemsUITests.swift */; };
 		FD97F576219DE18800874F68 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F575219DE18800874F68 /* List.swift */; };
 		FD97F578219DE68500874F68 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F577219DE68500874F68 /* XCTestCaseExtension.swift */; };
+		FDE6E7CE21B05725005F2F54 /* P02.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6E7CD21B05725005F2F54 /* P02.swift */; };
+		FDE6E7D021B05797005F2F54 /* P03.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6E7CF21B05797005F2F54 /* P03.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +44,15 @@
 		FD97F54E219DE0C800874F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD97F550219DE0C800874F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD97F555219DE0C800874F68 /* 99SwiftProblemsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 99SwiftProblemsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD97F559219DE0C800874F68 /* _9SwiftProblemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _9SwiftProblemsTests.swift; sourceTree = "<group>"; };
+		FD97F559219DE0C800874F68 /* P01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P01.swift; sourceTree = "<group>"; };
 		FD97F55B219DE0C800874F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD97F560219DE0C800874F68 /* 99SwiftProblemsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 99SwiftProblemsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD97F564219DE0C800874F68 /* _9SwiftProblemsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _9SwiftProblemsUITests.swift; sourceTree = "<group>"; };
 		FD97F566219DE0C800874F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD97F575219DE18800874F68 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		FD97F577219DE68500874F68 /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
+		FDE6E7CD21B05725005F2F54 /* P02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P02.swift; sourceTree = "<group>"; };
+		FDE6E7CF21B05797005F2F54 /* P03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,9 @@
 		FD97F558219DE0C800874F68 /* 99SwiftProblemsTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD97F559219DE0C800874F68 /* _9SwiftProblemsTests.swift */,
+				FD97F559219DE0C800874F68 /* P01.swift */,
+				FDE6E7CD21B05725005F2F54 /* P02.swift */,
+				FDE6E7CF21B05797005F2F54 /* P03.swift */,
 				FD97F577219DE68500874F68 /* XCTestCaseExtension.swift */,
 				FD97F55B219DE0C800874F68 /* Info.plist */,
 			);
@@ -293,7 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD97F578219DE68500874F68 /* XCTestCaseExtension.swift in Sources */,
-				FD97F55A219DE0C800874F68 /* _9SwiftProblemsTests.swift in Sources */,
+				FD97F55A219DE0C800874F68 /* P01.swift in Sources */,
+				FDE6E7CE21B05725005F2F54 /* P02.swift in Sources */,
+				FDE6E7D021B05797005F2F54 /* P03.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
