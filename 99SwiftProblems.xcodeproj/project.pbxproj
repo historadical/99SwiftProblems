@@ -17,6 +17,7 @@
 		FD97F578219DE68500874F68 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97F577219DE68500874F68 /* XCTestCaseExtension.swift */; };
 		FDE6E7CE21B05725005F2F54 /* P02.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6E7CD21B05725005F2F54 /* P02.swift */; };
 		FDE6E7D021B05797005F2F54 /* P03.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6E7CF21B05797005F2F54 /* P03.swift */; };
+		FDE6E7D221B058F3005F2F54 /* P04.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6E7D121B058F3005F2F54 /* P04.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FD97F577219DE68500874F68 /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
 		FDE6E7CD21B05725005F2F54 /* P02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P02.swift; sourceTree = "<group>"; };
 		FDE6E7CF21B05797005F2F54 /* P03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03.swift; sourceTree = "<group>"; };
+		FDE6E7D121B058F3005F2F54 /* P04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P04.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				FD97F559219DE0C800874F68 /* P01.swift */,
 				FDE6E7CD21B05725005F2F54 /* P02.swift */,
 				FDE6E7CF21B05797005F2F54 /* P03.swift */,
+				FDE6E7D121B058F3005F2F54 /* P04.swift */,
 				FD97F577219DE68500874F68 /* XCTestCaseExtension.swift */,
 				FD97F55B219DE0C800874F68 /* Info.plist */,
 			);
@@ -300,6 +303,7 @@
 			files = (
 				FD97F578219DE68500874F68 /* XCTestCaseExtension.swift in Sources */,
 				FD97F55A219DE0C800874F68 /* P01.swift in Sources */,
+				FDE6E7D221B058F3005F2F54 /* P04.swift in Sources */,
 				FDE6E7CE21B05725005F2F54 /* P02.swift in Sources */,
 				FDE6E7D021B05797005F2F54 /* P03.swift in Sources */,
 			);

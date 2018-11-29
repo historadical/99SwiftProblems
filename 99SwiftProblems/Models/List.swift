@@ -12,6 +12,11 @@ class List<T> {
     var value: T
     var nextItem: List<T>?
     
+    // P04
+    var length: Int {
+        return 1 + (nextItem?.length ?? 0)
+    }
+    
     convenience init(_ value: T, _ values: T...) {
         self.init([value] + Array(values))!
     }
