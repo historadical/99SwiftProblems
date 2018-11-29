@@ -1,5 +1,5 @@
 //
-//  P03.swift
+//  P05.swift
 //  99SwiftProblemsTests
 //
 //  Created by Nic Laughter on 11/29/18.
@@ -8,12 +8,9 @@
 
 import XCTest
 @testable import _9SwiftProblems
-
-class P03: XCTestCase {
+class P05: XCTestCase {
     
-    func testKthElement() {
-        let list = List(1, 1, 2, 3, 5, 8)
-        XCTAssertEqual(2, list[2])
-        XCTAssertNil(list[15])
+    func testReverse() {
+        XCTAssertEqualList([8, 5, 3, 2, 1, 1], List(1, 1, 2, 3, 5, 8).reverse())
     }
 }

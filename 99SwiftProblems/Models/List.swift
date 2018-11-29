@@ -43,4 +43,18 @@ extension List {
     subscript(index: Int) -> T? {
         return index == 0 ? value : nextItem?[index-1]
     }
+    
+    // P05
+    func reverse() -> List {
+        var originalList = self
+        var currentValue = List(value)
+        while originalList.nextItem != nil,
+            let nextItem = originalList.nextItem {
+            originalList = nextItem
+            let newList = List(originalList.value)
+            newList.nextItem = currentValue
+            currentValue = newList
+        }
+        return currentValue
+    }
 }
