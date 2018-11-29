@@ -29,7 +29,11 @@ extension List {
     }
     
     var penultimate: T? {
-        guard let next = nextItem else { return nil }
-        return next.penultimate ?? value
+        guard let nextItem = nextItem else { return nil }
+        return nextItem.penultimate ?? value
+    }
+    
+    subscript(index: Int) -> T? {
+        return index == 0 ? value : nextItem?[index-1]
     }
 }
